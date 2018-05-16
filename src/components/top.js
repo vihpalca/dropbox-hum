@@ -3,7 +3,7 @@ import { Layout, Input } from 'element-react';
 import styled from 'styled-components';
 import 'element-theme-default';
 
-import '../styles/body.css';
+import '../styles/top.css';
 import notification from '../assets/img/notification.png';
 import profile from '../assets/img/profile.png';
 import menuMobile from '../assets/img/menu.png';
@@ -41,17 +41,17 @@ class Top extends Component {
     return (
       <div>
         <Layout.Row type="flex" className="container-menu" span="24">
-          <Layout.Col xs="10" sm="10" md="15" lg="18">
+          <Layout.Col xs="10" sm="10" md="14" lg="18">
             <Title>{this.state.url}</Title>
             <ImageMenu onClick={this.openMenu} src={menuMobile} width="22" height="22"/>
           </Layout.Col>
           <Layout.Col xs="7" sm="10" md="6" lg="4">
             <Input placeholder="search" icon="search" />          
           </Layout.Col>
-          <Layout.Col className="align-center" xs="4" sm="2" md="1" lg="1">
+          <Layout.Col className="align-center" xs="4" sm="2" md="2" lg="1">
             <ImageNotification src={notification} width="22" height="22"/>
           </Layout.Col>
-          <Layout.Col xs="3" sm="2" md="1" lg="1">
+          <Layout.Col xs="3" sm="2" md="2" lg="1">
             <ImageProfile src={profile} width="32" height="32"/>
           </Layout.Col>    
         </Layout.Row>

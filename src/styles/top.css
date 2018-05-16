@@ -1,0 +1,23 @@
+.container-menu {
+  padding: 40px 0 0 40px;
+  height: 75px;
+}
+
+.align-center {
+  text-align: center;
+}
+
+.wrapper-mobile {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .container-menu {
+    padding: 10px 0 0 12px;
+    height: 47px;
+  }
+
+  .wrapper-mobile {
+    display: block;
+  }
+}
