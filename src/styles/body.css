@@ -1,0 +1,66 @@
+.container-menu {
+  padding: 40px 0 0 40px;
+  height: 75px;
+}
+
+.container-text { 
+  padding: 0 0 0 40px;
+}
+
+.container-list { 
+  padding: 0 0 0 40px;
+}
+
+.el-input__inner {
+  border-radius: 25px !important;
+}
+
+.el-button--primary {
+  background-color: #0070e0;
+  width: 80%;
+  height: 32px;
+}
+
+.el-button--primary span {
+  font-weight: 600;
+  margin-bottom: 3px;
+}
+
+.el-button--primary:hover {
+  background-color: #007af5;
+} 
+
+.align-center {
+  text-align: center;
+}
+
+.wrapper-button {
+  display: block;
+}
+
+.wrapper-mobile {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .container-list {
+    padding: 0 0 0 0px;
+  }
+
+  .container-text {
+    padding: 0 0 0 0px;
+  }
+
+  .container-menu {
+    padding: 10px 0 0 12px;
+    height: 47px;
+  }
+
+  .wrapper-button {
+    display: none;
+  }
+
+  .wrapper-mobile {
+    display: block;
+  }
+}

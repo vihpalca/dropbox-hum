@@ -1,0 +1,28 @@
+#bg-menu {  
+  background-color: #F7F9FA;
+  padding-top: 37px;
+}
+
+.menu-active {
+  width: 240px !important;
+}
+
+
+.link {
+  text-decoration: none;
+  color: #637282;
+}
+
+.active {
+  color: #0070E0;
+}
+
+#navresp {
+  margin-left: 280px;
+}
+
+@media screen and (max-width: 768px) {
+  #navresp {
+    margin-left: 0;
+  }
+}
