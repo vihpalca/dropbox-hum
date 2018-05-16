@@ -33,11 +33,15 @@ export default class List extends Component {
             <DateItem>{item.date}</DateItem>             
           </ContainerDescription>
         </ReactPlaceholder>
+        <Line />
       </Row>
     ));
   }
 }
 
+const Line = styled.hr `
+  border-top: 1px solid #E6E8EB;
+`
 
 const TitleItem = styled.label `
   display: block;
@@ -70,7 +74,7 @@ const Row = styled.div `
   -ms-flex-align: center;
   align-items: center;
   position: relative;
-  border-bottom: solid 1px #E6E8EB;
+  border-top: solid 1px #E6E8EB;
 
   &:hover {
     cursor: pointer;

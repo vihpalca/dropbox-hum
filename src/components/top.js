@@ -33,10 +33,6 @@ class Top extends Component {
     }
   }
 
-  onFocus = () => {
-    console.log('show!!');
-  }
-
   openMenu = () => {
     document.getElementById('bg-menu').classList.add('menu-active')
   }
@@ -45,17 +41,17 @@ class Top extends Component {
     return (
       <div>
         <Layout.Row type="flex" className="container-menu" span="24">
-          <Layout.Col xs="8" sm="10" md="15" lg="15">
+          <Layout.Col xs="10" sm="10" md="15" lg="18">
             <Title>{this.state.url}</Title>
             <ImageMenu onClick={this.openMenu} src={menuMobile} width="22" height="22"/>
           </Layout.Col>
-          <Layout.Col xs="10" sm="12" md="6" lg="6">
-            <Input onFocus={ this.onFocus }  placeholder="search" icon="search" />          
+          <Layout.Col xs="7" sm="10" md="6" lg="4">
+            <Input placeholder="search" icon="search" />          
           </Layout.Col>
-          <Layout.Col className="align-center" span="3">
+          <Layout.Col className="align-center" xs="4" sm="2" md="1" lg="1">
             <ImageNotification src={notification} width="22" height="22"/>
           </Layout.Col>
-          <Layout.Col span="3">
+          <Layout.Col xs="3" sm="2" md="1" lg="1">
             <ImageProfile src={profile} width="32" height="32"/>
           </Layout.Col>    
         </Layout.Row>
@@ -92,11 +88,6 @@ const TitleMobile = styled.h3 `
   margin-left: 12px;
 `
 
-
-const ImageFolder = styled.img `
-
-`
-
 const ImageNotification = styled.img `
   margin-top: 7px;
 `
@@ -113,10 +104,5 @@ const ImageMenu = styled.img `
 const ImageProfile = styled.img `
 `
 
-const ContainerImage = styled.div ``
-
-const ContainerDescription = styled.div `
-  margin-left: 10px;
-`
 
 export default Top;
