@@ -24,11 +24,11 @@ export default class List extends Component {
     return this.state.items.map((item, idx) => (
       <Row key={idx}>
         <ContainerImage>
-          <ReactPlaceholder type='rect'  style={{ width: 30, height: 24 }}  showLoadingAnimation={true} ready={this.state.ready} color='#E0E0E0' delay={1000}>
+          <ReactPlaceholder type='rect'  style={{ width: 30, height: 24 }}  showLoadingAnimation={true} ready={this.state.ready} color='#E0E0E0' delay={3000}>
             <ImageFolder src={folder} width="30" height="24"/>
           </ReactPlaceholder>
         </ContainerImage>
-        <ReactPlaceholder showLoadingAnimation={true} ready={this.state.ready} rows={2} color='#E0E0E0' delay={1000} style={{ width: 100 }}>
+        <ReactPlaceholder showLoadingAnimation={true} ready={this.state.ready} rows={2} color='#E0E0E0' delay={3000} style={{ width: 100 }}>
           <ContainerDescription>
             <TitleItem>{item.title}</TitleItem>
             <DateItem>{item.date}</DateItem>             

@@ -49,7 +49,7 @@ export default class Top extends Component {
       <Wrapper>
         <Layout.Row type="flex" className="container-menu" span="24">
           <Layout.Col xs="10" sm="10" md="14" lg="18">
-            <ReactPlaceholder rows={1} showLoadingAnimation={true} ready={this.state.ready} color='#E0E0E0' delay={1000}>
+            <ReactPlaceholder rows={1} showLoadingAnimation={true} ready={this.state.ready} color='#E0E0E0' delay={3000}>
               <Title>{this.state.url}</Title>
             </ReactPlaceholder>
             <ImageMenu onClick={this.openMenu} src={menuMobile} width="22" height="22"/>
