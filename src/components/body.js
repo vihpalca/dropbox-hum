@@ -1,8 +1,6 @@
 import React, { Component } from 'react';
 import { Layout, Button } from 'element-react';
 import styled from 'styled-components';
-import 'element-theme-default';
-import "react-placeholder/lib/reactPlaceholder.css";
 
 import '../styles/body.css';
 import Top from './top'

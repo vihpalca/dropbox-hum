@@ -1,16 +1,23 @@
 import React, { Component } from 'react';
 import { Layout, Input } from 'element-react';
 import styled from 'styled-components';
-import 'element-theme-default';
+import ReactPlaceholder from 'react-placeholder';
 
 import '../styles/top.css';
 import notification from '../assets/img/notification.png';
 import profile from '../assets/img/profile.png';
 import menuMobile from '../assets/img/menu.png';
 
-class Top extends Component {
+export default class Top extends Component {
   state = {
-    url: 'Home'
+    url: 'Home',
+    ready: false,
+  }
+
+  componentDidMount() {
+    setTimeout(() => {
+      this.setState({ ready: !this.state.ready })
+    }, 1000)
   }
 
   componentWillMount() {
@@ -39,10 +46,12 @@ class Top extends Component {
 
   render() {
     return (
-      <div>
+      <Wrapper>
         <Layout.Row type="flex" className="container-menu" span="24">
           <Layout.Col xs="10" sm="10" md="14" lg="18">
-            <Title>{this.state.url}</Title>
+            <ReactPlaceholder rows={1} showLoadingAnimation={true} ready={this.state.ready} color='#E0E0E0' delay={1000}>
+              <Title>{this.state.url}</Title>
+            </ReactPlaceholder>
             <ImageMenu onClick={this.openMenu} src={menuMobile} width="22" height="22"/>
           </Layout.Col>
           <Layout.Col xs="7" sm="10" md="6" lg="4">
@@ -60,11 +69,12 @@ class Top extends Component {
             <TitleMobile>Início</TitleMobile>
           </Layout.Col>
         </Layout.Row>
-      </div>
+      </Wrapper>
     );
   }
 }
 
+const Wrapper = styled.div ``
 
 const Title = styled.h3 `
   font-size: 20px;
@@ -101,8 +111,5 @@ const ImageMenu = styled.img `
   }
 `
 
-const ImageProfile = styled.img `
-`
+const ImageProfile = styled.img ``
 
-
-export default Top;

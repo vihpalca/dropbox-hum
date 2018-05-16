@@ -2,14 +2,12 @@ import React, { Component } from 'react';
 import { Layout } from 'element-react';
 import { BrowserRouter as Router, Route, NavLink as Link } from "react-router-dom";
 import styled from 'styled-components';
-import 'element-theme-default';
 import ReactPlaceholder from 'react-placeholder';
-import "react-placeholder/lib/reactPlaceholder.css";
-
-import logo_drop from '../assets/img/Dropbox_Icon.png';
 
 import '../styles/menu.css';
-import theme from '../theme'
+import theme from '../theme';
+
+import logo_drop from '../assets/img/Dropbox_Icon.png';
 
 
 

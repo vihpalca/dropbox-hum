@@ -4,6 +4,7 @@ import styled from 'styled-components';
 import 'element-theme-default';
 import ReactPlaceholder from 'react-placeholder';
 import "react-placeholder/lib/reactPlaceholder.css";
+
 import service from '../actions/list'
 import folder from '../assets/img/folder_blue.png';
 
